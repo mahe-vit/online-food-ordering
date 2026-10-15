@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Ordering Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f6fa;
+            color: #252525;
+        }
+
+        header {
+            background: #b83227;
+            color: white;
+            padding: 28px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #b83227;
+        }
+
+        .offer {
+            background: #fff0d6;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #00000012;
+        }
+
+        .price {
+            color: #16803c;
+            font-weight: bold;
+        }
+
+        button {
+            background: #b83227;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Online Food Ordering Portal</h1>
+        <p>Fresh Food Delivered to Your Doorstep</p>
+    </header>
+
+    <main class="container">
+        <div class="offer">
+            <h2>Today's Special Offer</h2>
+            <p>Enjoy 10% off selected menu items!</p>
+        </div>
+
+        <h2>Restaurant Details</h2>
+        <section class="item">
+            <h3>Mahe's Kitchen</h3>
+            <p>Category: Indian and Fast Food</p>
+            <p>Rating: 4.5 / 5</p>
+            <p>Availability: Open</p>
+        </section>
+
+        <h2>Food Categories</h2>
+        <p>South Indian | North Indian | Burgers | Pizza | Desserts</p>
+
+        <h2>Menu Items</h2>
+
+        <section class="menu">
+            <article class="item">
+                <h3>Chicken Burger</h3>
+                <p>Category: Fast Food</p>
+                <p class="price">₹149</p>
+                <p>Availability: Available</p>
+                <button onclick="orderFood('Chicken Burger')">
+                    Order Now
+                </button>
+            </article>
+
+            <article class="item">
+                <h3>Margherita Pizza</h3>
+                <p>Category: Pizza</p>
+                <p class="price">₹199</p>
+                <p>Availability: Available</p>
+                <button onclick="orderFood('Margherita Pizza')">
+                    Order Now
+                </button>
+            </article>
+
+            <article class="item">
+                <h3>Masala Dosa</h3>
+                <p>Category: South Indian</p>
+                <p class="price">₹99</p>
+                <p>Availability: Available</p>
+                <button onclick="orderFood('Masala Dosa')">
+                    Order Now
+                </button>
+            </article>
+
+            <article class="item">
+                <h3>Chocolate Brownie</h3>
+                <p>Category: Desserts</p>
+                <p class="price">₹89</p>
+                <p>Availability: Available</p>
+                <button onclick="orderFood('Chocolate Brownie')">
+                    Order Now
+                </button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Online Food Ordering Portal | Fresh Food, Happy Moments!</p>
+    </footer>
+
+    <script>
+        function orderFood(item) {
+            alert("You selected: " + item);
+        }
+    </script>
+</body>
+</html>
