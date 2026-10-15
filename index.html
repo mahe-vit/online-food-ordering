@@ -65,6 +65,10 @@
             cursor: pointer;
         }
 
+        button:hover {
+            background: #92251d;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -86,6 +90,7 @@
         </div>
 
         <h2>Restaurant Details</h2>
+
         <section class="item">
             <h3>Mahe's Kitchen</h3>
             <p>Category: Indian and Fast Food</p>
@@ -147,7 +152,10 @@
 
     <script>
         function orderFood(item) {
-            alert("You selected: " + item);
+            alert(
+                "Thank you for choosing Mahe's Kitchen!\n" +
+                "Your order for " + item + " has been received."
+            );
         }
     </script>
 </body>
